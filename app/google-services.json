@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "906786516961",
+    "project_id": "text-repeater-417b0",
+    "storage_bucket": "text-repeater-417b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906786516961:android:6c027ec888bdcccad02ca0",
+        "android_client_info": {
+          "package_name": "com.skappsstore.text.repeater"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906786516961-4ag7ti6guro3e32kjet6v4a33v4lbtq7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.skappsstore.text.repeater",
+            "certificate_hash": "023c0a141c3b99528f0c40ea2798c7f1420db430"
+          }
+        },
+        {
+          "client_id": "906786516961-1nsqgt4g135co5396efusd8v8sqv3oqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoIIHcb18pnK0v8IO4URiHcmhNsZJ1B_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906786516961-1nsqgt4g135co5396efusd8v8sqv3oqa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

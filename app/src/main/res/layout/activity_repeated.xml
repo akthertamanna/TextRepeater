@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_background"
+    tools:context=".RepeatedActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="0dp">
+
+
+                <LinearLayout
+                    android:paddingVertical="10dp"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/type"
+                        app:endIconMode="custom">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/mainText"
+                            android:inputType="textMultiLine"
+                            android:maxHeight="120dp"
+                            android:textAlignment="textStart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="7"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="16sp"
+                            android:layout_weight="5"
+                            android:text="@string/text_howmany"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/howManyTxt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:maxLength="4"
+                            android:hint="10"
+                            android:text="10"
+                            android:inputType="number"
+                            android:minHeight="48dp"
+                            android:textAlignment="center" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:text=""
+                        android:visibility="gone"
+                        android:id="@+id/byteID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+
+                    <LinearLayout
+                        android:gravity="start"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:text="Clear"
+                            android:id="@+id/clearBtn"
+                            android:layout_height="50dp"
+                            android:textAllCaps="false"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="140dp" />
+
+                        <Button
+                            android:id="@+id/repeatMainText"
+                            android:layout_width="140dp"
+                            android:layout_height="50dp"
+                            android:text="Repeat Text"
+                            android:textAllCaps="false"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/withSpace"
+                            android:text="With Space"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textColorHint="@android:color/white" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/withNewLine"
+                            android:text="New Line"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textColorHint="@android:color/white" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/withVerSpace"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="12sp"
+                            android:text="Verticle Line"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textColorHint="@android:color/white" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_gravity="end"
+                android:id="@+id/instructionID"
+                android:textColor="@color/purple_500"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/smsCategoryRootID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:padding="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="0dp">
+
+                <LinearLayout
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Repeated Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp">
+
+                        <EditText
+                            android:id="@+id/result"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:enabled="false"
+                            android:hint="@string/text_will_here"
+                            android:minHeight="48dp"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+                    </androidx.core.widget.NestedScrollView>
+
+
+
+                        <LinearLayout
+                            android:layout_gravity="end"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/ic_baseline_content_copy_24"
+                                android:id="@+id/copyBtn"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"/>
+
+                            <ImageView
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/ic_baseline_share_24"
+                                android:id="@+id/shareBtn"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"/>
+                            <ImageView
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/whatsapp"
+                                android:id="@+id/shareWhatBtn"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"/>
+
+
+
+                        </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

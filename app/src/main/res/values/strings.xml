@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Text Repeater</string>
+    <string name="type">Type your text here</string>
+    <string name="shareApps">Hey, I download an amazing apps, Text Repeater. This app generate repeated message for you, generate blank message and allows to join text before and after.
+    \nDownload it from Google Play Store -> </string>
+
+    <string name="text_howmany">How many times to repeat text?</string>
+    <string name="text_will_here">Your repeated text will be generate here</string>
+    <string name="merge_text_hint">Your marge text will be here</string>
+
+    <string name="howToUseMerge">How to use Join Text Before/After?</string>
+    <string name="howToUseRepeat">How to use Repeat Text?</string>
+    <string name="howToUseBlank">How to use Blank Text?</string>
+
+    <string name="mergeTextInst">If you would like to add/join multiple text before or after at once time then have to separate the text with comme (,) or line.\n
+    For example, if you want to separate with comma (,) then enter text like: Apple,Pineapple,Mango\n
+        If you want to separate with line then enter text like:\n
+        Apple\n
+        Pineapple\n
+        Mango\n\nRemember you can only add/join text up to 100 lines in order to running this app smoothly in your device. If you need more text to add/join, follow the process few times.
+    </string>
+    <string name="repeatedTextInst">Enter the text you want repeat. Enter how many times you want to repeat your text.
+        \nIf you select with space, it will put space between two repeated texts. For example: Your Text Your Text Your Text Your Text.\n
+        \nWithout space your text will be look like:
+        \nYour TextYour TextYourText Your Text.\n\nIf you select new line, it will be generate every text with new line for example:\n
+        \nYour Text
+        \nYour Text
+        \nYour Text
+        \nYour Text
+\n\nIf you select Vertical space, it will generate vertical space between two repeated texts. For example:
+
+    \n\nYour Text\n\n
+
+    Your Text\n\n
+
+    Your Text\n\n
+
+    Your Text\n
+
+    </string>
+    <string name="blankTextInst">Enter how many times you want to generate blank text. You can add lines in your blank text.
+        \nRemember that few application such as Facebook messenger or might be other applications, doesn\'t allow to enter blank text. In this case, this will be not our application fault.
+    </string>
+
+    <string name="notice">Note: Blank texts cannot be send to few applications because they trim all the blank text before send to the recipient. In this case, this, will be not our application fault.</string>
+
+    <string-array name="servicesTitle">
+        <item>Repeated Text</item>
+        <item>Blank Text</item>
+        <item>Count Text</item>
+        <item>Join Text Before/After</item>
+    </string-array>
+
+
+    <string name="emailus">storeskapps@gmail.com</string>
+
+</resources>
